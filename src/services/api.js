@@ -1,7 +1,7 @@
 const api =  {
     fetchData : async () => {
         try {
-          const response = await fetch('http://localhost:3000/fetch_user');
+          const response = await fetch('https://mern-backend-949a.onrender.com/fetch_user');
           if (!response.ok) {
             throw new Error('Network response was not ok.');
           }
@@ -29,7 +29,7 @@ const api =  {
             body: JSON.stringify(Data),
           };
       
-          const response = await fetch('http://localhost:3000/insert_user',options);
+          const response = await fetch('https://mern-backend-949a.onrender.com/insert_user',options);
           if (!response.ok) {
             throw new Error('Network response was not ok.');
           }
@@ -58,7 +58,7 @@ const api =  {
             },
             body: JSON.stringify(requestData),
           };
-          const response = await fetch('http://localhost:3000/update_user',options);
+          const response = await fetch('https://mern-backend-949a.onrender.com/update_user',options);
           if (!response.ok) {
             throw new Error('Network response was not ok.');
           }
@@ -84,7 +84,7 @@ const api =  {
           };
       
     
-          const response = await fetch('http://localhost:3000/fetch_single_user',options);
+          const response = await fetch('https://mern-backend-949a.onrender.com/fetch_single_user',options);
           if (!response.ok) {
             throw new Error('Network response was not ok.');
           }
@@ -109,7 +109,7 @@ const api =  {
                 },
                 body: JSON.stringify(requestData),
             };
-            const response = await fetch('http://localhost:3000/delete_user',options);
+            const response = await fetch('https://mern-backend-949a.onrender.com/delete_user',options);
             if (!response.ok) {
                 throw new Error('Network response was not ok.');
             }
